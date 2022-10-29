@@ -1,0 +1,26 @@
+main: citim textul si obtinem operatiile si numerele prin strtok intrucat sunt despartite de spatii
+astfel aflam intai comandam si apoi in functie de comanda obtinem si restul datelor
+
+edit: insereaza imaginea in memoria programului, matricea de pixeli o avem intro matrice de
+elemente ce contin 3 val char (culorile R G B)
+
+save: salvam imaginea la path oferit
+insert: folosim functia edit ca sa citim noua imagine apoi integram noua poza de la pozitiile 
+oferite pana cand iesim din poza originala
+
+set draw_color: citim codurile pt culori si le incarcam intro variabila
+
+set line_width: citim grosimea si o introducem intro variabila
+
+draw line: transmitem grosimea si culorile setate sau (1 si negru) in cazul in care nu au fost 
+oferite, comparam distantele pe OX si pe OY si in functie de cea care e mai mare mergem pe x sau pe y
+
+draw rectangle: citim valorile, adunam height si width la x, respectiv y pt a obtine celalalt colt 
+al dreptunghiului, de aici folosim fct draw line pt a desena dreptunghiul
+
+draw triangle: citim cele 3 pct apoi folosim draw line pt a desena liniile
+
+fill: citim cele 2 valori, verificam ce culoare are acel pixel, daca este diferit folosim o 
+coada pt a introduce punctele ce vor trebui modificate si un vector visited pt a vedea care 
+puncte au fost visitate, pt a transforma matricea intrun vector efectuam transformarea 
+(x,y)->(x*(grosimea)+y)
